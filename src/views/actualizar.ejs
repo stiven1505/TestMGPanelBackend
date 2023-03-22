@@ -1,5 +1,4 @@
-
-<form action="/crud/crear" method="POST">
+<form action="/actualizar/<%= suscriptorActualizado._id %>" method="POST">
   <div class="mb-3">
     <label for="" class="form-label">Nombre</label>
     <input
@@ -7,6 +6,7 @@
       name="nombre"
       class="form-control"
       aria-describedby="emailHelp"
+      value="<%= suscriptorActualizado.nombre %>"
     />
 
     <label for="" class="form-label">Correo electronico</label>
@@ -15,8 +15,9 @@
       name="correo"
       class="form-control"
       aria-describedby="emailHelp"
+      value="<%= suscriptorActualizado.correo %>"
     />
 
-    <button type="submit" class="btn btn-primary">SUSCRIBETE</button>
+    <button type="submit" class="btn btn-primary">ACTUALIZAR</button>
   </div>
 </form>

@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Correo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% suscriptorListado.forEach(function(suscriptor) { %>
+        
+      
+      <th scope="row"><%= suscriptor.nombre %></th>
+      <td><%= suscriptor.correo %></td>
+      <td><a href="/actualizar/<%= suscriptor._id%>">Actualizar</a></td>
+
+      <td><a href="/eliminar">Eliminar</a></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+

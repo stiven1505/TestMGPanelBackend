@@ -8,17 +8,8 @@
   </head>
   <body>
     <div><%- include("../views/partials/crear")%></div>
-    <div>
-      <ul>
-        <% suscriptorListado.forEach(function(suscriptor) { %>
-
-        <li><%= suscriptor.nombre %></li>
-        <li><%= suscriptor.correo %></li>
-        <button>Actualizar</button>
-        <button>Eliminar</button>
-        <% }); %>
-      </ul>
-    </div>
+    <div><%- include("../views/partials/tabla")%></div>
+    
   </body>
 </html>
 

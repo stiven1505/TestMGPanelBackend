@@ -1,10 +1,16 @@
 import {connect} from "mongoose";
+//Para cargar leer las variables de entorno .env
+import {config} from 'dotenv';
+config();
+
+
+
 
 (async()=> {
-
+ 
+    
     try{
-        const db = await connect("mongodb+srv://stivengar20088:stivengar20088@cluster0.mcr9jzo.mongodb.net/Cluster0?retryWrites=true&w=majority")
-
+        const db = await connect(process.env.MONGO_URI || "mongodb://localhost/test");
         console.log('DB connect',db.connection.name)
     }catch(e){
         console.log(e);

@@ -1,60 +1,19 @@
 import { Router } from 'express'
-import suscriptor from '../models/suscriptor.js'
+
+import { actualizarSuscriptoresGet, actualizarSuscriptoresPost, crearSuscriptores, eliminarSuscriptores, listarSuscriptores, renderIndex } from '../controllers/suscripcionControlllers.js'
 const router = Router()
 
 //-----------GET-----------------
 
-// rutas relaccionadas con la aplicacion es decir va estar conectada con el menu 
+// rutas relaccionadas con la aplicacion
 
-// cuando se haga la consulta de la pagina principal se muestra lo que esta en la funcion
-router.get('/', (req, res) => res.render('index', { title: 'Wee Logistic' }));
-router.get('/actualizar/:id', async(req, res) => {
-
-    try {
-        const suscriptorActualizado = await suscriptor.findById(req.params.id).lean()//lean vuelve un obj de js
-    res.render('actualizar', {suscriptorActualizado});
-
-    } catch (error) {
-        console.log(error.message)
-    }
-    
-
-});
-
-
-router.get('/administracion', async (req, res) => {
-
-    const suscriptorListado = await suscriptor.find().lean()//devuelve una lista de objetos tipica  con lean
-
-    res.render('administracion', { suscriptorListado: suscriptorListado });
-
-});
-
-
+router.get('/', renderIndex);
+router.get("/actualizar/:id", actualizarSuscriptoresGet);
+router.get('/administracion', listarSuscriptores);
+router.get('/eliminar/:id', eliminarSuscriptores)
 
 //-----------POST----------------------
-router.post('/crud/crear', async (req, res) => {
-
-    try {
-        const suscriptorCreado = suscriptor(req.body);//extrae los inputs del formulario crear.js
-        await suscriptorCreado.save();//guarda en la base de datos
-        res.redirect("back");
-    } catch (error) {
-        console.log(error)
-    }
-
-
-})
-
-router.post('/actualizar/:id', async (req, res) => {
-
-    try {
-        
-    } catch (error) {
-        console.log(error)
-    }
-
-
-})
+router.post('/crud/crear', crearSuscriptores)
+router.post("/actualizar/:id", actualizarSuscriptoresPost)
 
 export default router

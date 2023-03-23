@@ -8,7 +8,7 @@ const app = express()
 //sirve para tener la ruta absoluta sin importar el OS
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path'
-const __dirname = dirname(fileURLToPath(import.meta.url));
+
 
 
 app.set('views', join(__dirname, 'views')) //Se agrega la direccion donde estan las vistas 

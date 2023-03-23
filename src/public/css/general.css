@@ -2,7 +2,8 @@ body{
 position: relative;
 background: linear-gradient(74.24deg, #1EA2D6 0%, #5BB4F3 23.06%, #1979EE 43.5%, #1571E0 72.85%, #0959BA 100.63%);
 color: #FFFFFF;
-background-repeat: no-repeat;
+
+
 background-size: 100% 100vh;
 }
 
@@ -29,10 +30,14 @@ input{
     font-family: SubTitulos;
 }
 p{
+    max-width: 100%;
+    width: auto;
     font-family: SubTitulos;
 }
 .titulo{
-    font-size: 4rem;
+    max-width: 100%;
+  width: auto;
+  font-size: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,11 +45,19 @@ p{
 }
 
 .subTitulo{
-    font-size: 1.2rem;
+    max-width: 100%;
+    width: auto;
+    font-size: 20px;
     color: black;
     font-family: SubTitulos;
 }
-
+.textoContador{
+    max-width: 100%;
+    width: auto;
+    font-size: 22px;
+    
+    font-family: SubTitulos;
+}
 
 .logoI {
     max-width: 40%;
@@ -63,6 +76,11 @@ p{
 .izquierda{
 margin-top: 26rem;
     
+}
+@media screen and (max-width:800px) {
+    .izquierda{
+        margin-top: 35rem;
+    }
 }
 .redes{
     margin-left: 1rem;
@@ -85,8 +103,13 @@ margin-top: 26rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-
+.contador{
+    margin-left: 3rem;
+    text-align: center;
+}
+  
 
 
 

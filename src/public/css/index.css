@@ -24,3 +24,27 @@ margin-top: 5%;
     width: 12rem; 
     background-color:#0959BA;
 }
+.cuenta{
+    margin-right: 3rem;
+}
+.name{
+    max-width: 100%;
+    width: 8rem;
+    font-size: 15px;
+    ;
+    
+}
+.correoE{
+    max-width: 100%;
+    width: 10rem;
+    font-size: 15px;
+    ;
+
+}
+.btnSus{
+    max-width: 100%;
+    width: 10rem;
+    font-size: 15px;
+   
+}
+1335

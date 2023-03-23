@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="d-flex justify-content-center">
-      <div class="col-3 izquierda"><%- include("../views/partials/diseno/margenIzquierda") %></div>
+      <div class="col-3 col-sm-2 izquierda"><%- include("../views/partials/diseno/margenIzquierda") %></div>
 
       <div class="col-6 cajaTexto">
         <div class="espaciado"><p class="titulo">PRÓXIMAMENTE</p></div>
@@ -19,7 +19,7 @@
             de transporte y almacenamiento de tus productos.
           </p>
         </div>
-        <div class="espaciado cuentaRegresiva"><h1>cuenta regresiva</h1></div>
+        <div class="espaciado cuentaRegresiva"><h1 class="cuenta"><%- include("../views/partials/diseno/cuentaRegresiva") %></h1></div>
 
         <div class="espaciado correo">
           <p class="subTitulo textoCorreo">
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="col-3 derecha">
+      <div class="col-md-3  derecha">
         <%- include("../views/partials/diseno/margenDerecha") %>
       </div>
     </div>

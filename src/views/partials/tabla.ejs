@@ -12,9 +12,9 @@
       
       <th scope="row"><%= suscriptor.nombre %></th>
       <td><%= suscriptor.correo %></td>
-      <td><a href="/actualizar/<%= suscriptor._id%>">Actualizar</a></td>
+      <td><a href="/actualizar/<%= suscriptor._id%>" class="btnActualizacion">Actualizar</a></td>
 
-      <td><a href="/eliminar/<%= suscriptor._id%>  ">Eliminar</a></td>
+      <td><a href="/eliminar/<%= suscriptor._id%>" class="btnEliminar">Eliminar</a></td>
       </tr>
     <% }); %>
   </tbody>

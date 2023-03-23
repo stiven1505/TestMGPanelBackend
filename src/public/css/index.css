@@ -1,0 +1,26 @@
+.cajaTexto{
+    margin-top: 3%;
+}
+
+.espaciado{
+margin-top: 5%;
+}
+
+
+.correo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.form-inline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-long {
+    width: 12rem; 
+    background-color:#0959BA;
+}

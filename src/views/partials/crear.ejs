@@ -1,22 +1,30 @@
+<form action="/crud/crear" method="POST" class="form-inline">
+  
 
-<form action="/crud/crear" method="POST">
-  <div class="mb-3">
-    <label for="" class="form-label">Nombre</label>
+
+<div class="row">
+  <div class="col mx-n3">
     <input
       type="text"
       name="nombre"
-      class="form-control"
-      aria-describedby="emailHelp"
+      class="form-control mr-1 name"
+      placeholder="Nombre"
+      
     />
-
-    <label for="" class="form-label">Correo electronico</label>
+  </div>
+  <div class="col mx-n1">
+    
     <input
       type="email"
       name="correo"
-      class="form-control"
-      aria-describedby="emailHelp"
+      class="form-control mr-1"
+      placeholder="Correo electrónico"
     />
-
-    <button type="submit" class="btn btn-primary">SUSCRIBETE</button>
   </div>
+
+  <div class="col">
+    <button type="submit" class="btn btn-primary btn-long">SUSCRIBETE</button>
+  </div>
+</div>
+
 </form>

@@ -21,6 +21,7 @@ app.use(express.urlencoded({extended:false}));
 
 
 app.use(indexRoutes) //utilizar los routers 
+//static archivos
 app.use(express.static(join(__dirname, "public")));
 
 export default app;

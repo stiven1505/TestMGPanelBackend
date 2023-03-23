@@ -1,0 +1,95 @@
+body{
+position: relative;
+background: linear-gradient(74.24deg, #1EA2D6 0%, #5BB4F3 23.06%, #1979EE 43.5%, #1571E0 72.85%, #0959BA 100.63%);
+color: #FFFFFF;
+background-repeat: no-repeat;
+background-size: 100% 100vh;
+}
+
+@font-face {
+    font-family: Titulos;
+    src: url("Nexa-Heavy.ttf");
+}
+@font-face {
+    font-family: SubTitulos;
+    src: url("Nexa-ExtraLight.ttf");
+}
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: SubTitulos;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+button{
+    font-family: SubTitulos;
+}
+input{
+    font-family: SubTitulos;
+}
+p{
+    font-family: SubTitulos;
+}
+.titulo{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Titulos;
+}
+
+.subTitulo{
+    font-size: 1.2rem;
+    color: black;
+    font-family: SubTitulos;
+}
+
+
+.logoI {
+    max-width: 40%;
+    height: auto;
+}
+
+.repositorio{
+  
+    margin-top: 23rem;
+
+}
+.derecha{
+    text-align: right;
+}
+
+.izquierda{
+margin-top: 26rem;
+    
+}
+.redes{
+    margin-left: 1rem;
+}
+.contacto{
+    margin-left: 2rem;
+    
+}
+.iconos{
+    font-size: 0.9rem;
+}
+.ciudad{
+    font-size: 1.5rem;
+}
+
+.contacto p {
+    margin-bottom: 5px; /* Cambia el valor según el espacio deseado */
+}
+.cuentaRegresiva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+  

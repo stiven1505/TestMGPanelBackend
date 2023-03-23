@@ -1,0 +1,23 @@
+.actualizar{
+    margin-top: 10rem;
+}
+.btnActualizar{
+  margin-top: 2rem;
+}
+.admin{
+    margin-top: 10rem;
+}
+.listar{
+    margin-top: 3rem;
+}
+.btnActualizacion{
+    background-color: #198754;
+    
+}
+.btnEliminar{
+    background-color: #dc3545ed;
+}
+.table{
+    margin-top: 3rem;
+    font-family: SubTitulos;
+}
